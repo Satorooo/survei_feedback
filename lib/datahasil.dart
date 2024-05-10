@@ -37,24 +37,6 @@ class _datahasilState extends State<datahasil> {
             DataCell(Text(e.saran))
           ]);
         }).toList(),
-        // columns: ListView.builder(
-        //   itemCount: listhasil.length,
-        //   itemBuilder: (context, index) =>
-        //      ListTile(
-        //       title: Text(listhasil[index].dosen),
-        //       subtitle: Column(
-        //         crossAxisAlignment: CrossAxisAlignment.start,
-        //         children: [
-        //           Text(listhasil[index].point1),
-        //           Text(listhasil[index].point2),
-        //           Text(listhasil[index].point3),
-        //           Text(listhasil[index].point4),
-        //           Text(listhasil[index].point5),
-        //           Text(listhasil[index].saran),
-        //         ],
-        //       ),
-        //     ),
-        //   ),
       ),
     );
   }
