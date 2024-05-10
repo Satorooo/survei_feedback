@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:survei_feedback/angket.dart';
 import 'package:survei_feedback/loginpage.dart';
 
 void main() {
