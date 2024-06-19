@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:survei_feedback/loginpage.dart';
+import 'package:survei_feedback/pages/login_page.dart';
 
 class signuppage extends StatelessWidget {
   @override
@@ -95,7 +95,7 @@ class signuppage extends StatelessWidget {
         ElevatedButton(
           onPressed: () {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => loginpage()));
+                .push(MaterialPageRoute(builder: (_) => login_page()));
           },
           child: Text(
             "Sign Up",
@@ -118,7 +118,7 @@ class signuppage extends StatelessWidget {
         TextButton(
             onPressed: () {
               Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => loginpage()));
+                  .push(MaterialPageRoute(builder: (_) => login_page()));
             },
             child: Text("Login"))
       ],

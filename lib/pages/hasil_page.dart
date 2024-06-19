@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:survei_feedback/model.dart';
 
-class datahasil extends StatefulWidget {
-  const datahasil({super.key});
+class hasil_page extends StatefulWidget {
+  const hasil_page({super.key});
 
   @override
-  State<datahasil> createState() => _datahasilState();
+  State<hasil_page> createState() => _hasil_pageState();
 }
 
-class _datahasilState extends State<datahasil> {
+class _hasil_pageState extends State<hasil_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Data Hasil'),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.teal,
       ),
       body: DataTable(
         columns: const [

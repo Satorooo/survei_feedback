@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:survei_feedback/angket.dart';
-import 'package:survei_feedback/signuppage.dart';
+import 'package:survei_feedback/pages/signup_page.dart';
+import 'angket.dart';
 
-class loginpage extends StatelessWidget {
+class login_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

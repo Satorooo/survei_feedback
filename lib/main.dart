@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:survei_feedback/loginpage.dart';
+import 'package:get/get.dart';
+import 'package:survei_feedback/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Aplikasi Survei Dan Feedback',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
               foregroundColor: MaterialStatePropertyAll(Colors.white)),
         ),
       ),
-      home: loginpage(),
+      home: SplashScreen(),
     );
   }
 }

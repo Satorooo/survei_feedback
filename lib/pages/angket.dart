@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:survei_feedback/datahasil.dart';
+import 'package:survei_feedback/pages/hasil_page.dart';
 import 'package:survei_feedback/model.dart';
 
 class angket extends StatefulWidget {
@@ -50,7 +49,7 @@ class _angketState extends State<angket> {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 100.0, right: 100.0),
+            padding: EdgeInsets.only(left: 100.0, right: 100.0, top: 20.0),
             child: Row(
               children: [
                 Expanded(
@@ -92,10 +91,10 @@ class _angketState extends State<angket> {
                       dense: true,
                       value: "Sangat Setuju",
                       title: Text('Sangat Setuju'),
-                      groupValue: nilai1,
+                      groupValue: nilai2,
                       onChanged: (value) {
                         setState(() {
-                          nilai1 = value;
+                          nilai2 = value;
                         });
                       }),
                 ),
@@ -104,10 +103,10 @@ class _angketState extends State<angket> {
                       dense: true,
                       value: "Setuju",
                       title: Text('Setuju'),
-                      groupValue: nilai1,
+                      groupValue: nilai2,
                       onChanged: (value) {
                         setState(() {
-                          nilai1 = value;
+                          nilai2 = value;
                         });
                       }),
                 ),
@@ -116,10 +115,10 @@ class _angketState extends State<angket> {
                       dense: true,
                       value: "Agak Setuju",
                       title: Text('Agak Setuju'),
-                      groupValue: nilai1,
+                      groupValue: nilai2,
                       onChanged: (value) {
                         setState(() {
-                          nilai1 = value;
+                          nilai2 = value;
                         });
                       }),
                 ),
@@ -128,10 +127,10 @@ class _angketState extends State<angket> {
                       dense: true,
                       value: "Tidak Setuju",
                       title: Text('Tidak Setuju'),
-                      groupValue: nilai1,
+                      groupValue: nilai2,
                       onChanged: (value) {
                         setState(() {
-                          nilai1 = value;
+                          nilai2 = value;
                         });
                       }),
                 ),
@@ -140,17 +139,17 @@ class _angketState extends State<angket> {
                       dense: true,
                       value: "Sangat Tidak Setuju",
                       title: Text('Sangat Tidak Setuju'),
-                      groupValue: nilai1,
+                      groupValue: nilai2,
                       onChanged: (value) {
                         setState(() {
-                          nilai1 = value;
+                          nilai2 = value;
                         });
                       }),
                 ),
               ],
             ),
           ),
-          Container(
+          /*     Container(
             padding: EdgeInsets.only(left: 100.0, right: 100.0, top: 10.0),
             child: Row(
               children: [
@@ -465,7 +464,8 @@ class _angketState extends State<angket> {
                 ),
               ],
             ),
-          ),
+         ),
+         */
           Container(
             padding: EdgeInsets.only(left: 100.0, right: 100.0, top: 15.0),
             child: Row(
@@ -530,7 +530,7 @@ class _angketState extends State<angket> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => datahasil(),
+                            builder: (context) => hasil_page(),
                           ),
                         );
                       },
