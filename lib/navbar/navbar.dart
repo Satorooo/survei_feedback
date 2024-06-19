@@ -1,6 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:survei_feedback/pages/angket.dart';
+import 'package:survei_feedback/pages/angket_page.dart';
 import 'package:survei_feedback/pages/hasil_page.dart';
 import 'package:survei_feedback/pages/home_page.dart';
 
@@ -15,7 +15,7 @@ class _NavBarState extends State<NavBar> {
   int _bottomindex = 0;
   List<Widget> pages = const [
     HomePage(),
-    angket(),
+    AngketPage(),
     hasil_page(),
   ];
 
