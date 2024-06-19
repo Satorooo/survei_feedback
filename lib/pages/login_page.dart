@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:survei_feedback/navbar/navbar.dart';
 import 'package:survei_feedback/pages/signup_page.dart';
-import 'angket.dart';
 
 class login_page extends StatelessWidget {
   @override
@@ -66,7 +66,7 @@ class login_page extends StatelessWidget {
         ElevatedButton(
           onPressed: () {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => angket()));
+                .push(MaterialPageRoute(builder: (_) => NavBar()));
           },
           child: Text(
             "Login",
