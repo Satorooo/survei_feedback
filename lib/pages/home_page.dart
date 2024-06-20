@@ -17,15 +17,14 @@ class _HomePageState extends State<HomePage> {
           title: Text('Home Page'),
           backgroundColor: Colors.teal,
         ),
-        body: Column(
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Get.to(() => login_page());
-              },
-              child: Text("Log Out"),
-            ),
-          ],
-        ));
+        body: Center(
+            child: Container(
+          child: ElevatedButton(
+            onPressed: () {
+              Get.to(() => login_page());
+            },
+            child: Text("Log Out"),
+          ),
+        )));
   }
 }

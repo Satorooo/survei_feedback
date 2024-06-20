@@ -34,9 +34,9 @@ class _NavBarState extends State<NavBar> {
         color: Colors.teal,
         animationDuration: const Duration(milliseconds: 300),
         items: const <Widget>[
-          Icon(Icons.home, size: 26, color: Colors.white),
-          Icon(Icons.add, size: 26, color: Colors.white),
-          Icon(Icons.message, size: 26, color: Colors.white),
+          Icon(Icons.home, size: 30, color: Colors.white),
+          Icon(Icons.add, size: 30, color: Colors.white),
+          Icon(Icons.message, size: 30, color: Colors.white),
         ],
       ),
     );
