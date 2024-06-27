@@ -58,7 +58,7 @@ class login_page extends StatelessWidget {
                 borderSide: BorderSide.none),
             fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
             filled: true,
-            prefixIcon: Icon(Icons.person),
+            prefixIcon: Icon(Icons.password),
           ),
           obscureText: true,
         ),
